@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-    <title>App Name: A Coding Challenge</title>
+    <title>Palin-Droid: A Coding Challenge</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="/img/logo-favicon.PNG" type="image/x-icon">
@@ -32,7 +32,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="/img/curtis-henley-low-resolution-logo-color-on-transparent-background.png" height="50px"
                         alt="Curtis Henley logo">
-                    App Name
+                    Palin-Droid
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -54,7 +54,7 @@
                         </li>
                         <li class="nav-item">
                             <!-- MAKE SURE LINK MATCHES REPO OF APP BEING DEMO'D -->
-                            <a class="nav-link" href="https://github.com/curtisdhenley?tab=repositories"
+                            <a class="nav-link" href="https://github.com/curtisdhenley/js-palin-droid"
                                 target="_blank">The Repo</a>
                         </li>
                         <li class="nav-item">
@@ -70,9 +70,31 @@
     </header>
 
     <main class="content container">
-        <h1>APP UI GOES HERE</h1>
-        <input type="text" id="message" placeholder="Enter a Message...">
-        <button class="btn btn-primary" type="button" id="btnSubmit">Display a message</button>
+        <div class="row mt-5">
+            <div class="col">
+                <h1 class="display-5 fw-bold mb-3">Palin-Droid: A Coding Challenge</h1>
+                <h4 class="lead">
+                    A Palindrome is a word or sentence that reads the same backwards or forwards. Palin-Droid is an app built to find palindromes.
+                </h4>
+            </div>
+            <div class="col">
+                <h5 class="border-bottom border-1 border-success">Enter a word or sentence to see if it's a Palindrome</h5>
+                <form action="" class="row g-2">
+                    <div class="col">
+                        <input type="text" id="userInput" class="form-control" placeholder="Enter a word or sentence"
+                            aria-label="Enter a Word or Sentence">
+                    </div>
+                    <div class="col-12">
+                        <button type="button" id="btnSubmit" class="btn btn-success">Check</button>
+                    </div>
+                </form>
+                <div class="mt-5 alert alert-success invisible fade show" id="alert" role="alert">
+                    <h4 class="alert-heading">Sweet! You entered a Palindrome!</h4>
+                    <hr>
+                    <p class="mb-0" id="results"></p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="container-fluid mt-5">
@@ -112,7 +134,7 @@
     <!-- JS Scripts -->
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById('btnSubmit').addEventListener('click', displayMsg);
+        document.getElementById('btnSubmit').addEventListener('click', getValues);
     </script>
 </body>
 
