@@ -99,7 +99,7 @@
                                 palindromeString += trimmedUserInput[i];
                             }
                                 
-                                if (palindromeString != trimmedUserInput) {
+                            if (palindromeString != trimmedUserInput) {
                                 // if it's not a palindrome, tell our user!
                                 Swal.fire(
                                     {
@@ -108,8 +108,8 @@
                                         text: `"${userInput}" is not a Palindrome!`
                                     }
                                 );
-                                } else {
-                                    return palindromeString;
+                            } else {
+                                return palindromeString;
                             }
                         
                         }
