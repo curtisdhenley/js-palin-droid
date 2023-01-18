@@ -1,3 +1,3 @@
 # js-palin-droid
 
-***Live Link: ***
+***Live Link: https://ch-palin-droid.netlify.app/***
